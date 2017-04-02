@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Pierwszy projekt prostej stronki</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="conteiner">
+        <header>
+            <div class="main_width">
+                <p class="logo">SIT <span>ON</span> CHAIR</p>
+                <nav>
+                    <p class="nav_1">O FIRMIE</p>
+                    <p class="nav_2">GALERIA</p>
+                    <p class="nav_3">KONTAKT</p>
+                </nav>
+            </div>
+        </header>
+
+
+        <section class="section1_chair">
+            <div class="main_width">
+                <div class="arrowLeft"></div>
+                <img src="images/black_chair.png" />
+                <div class="arrowRight"></div>
+                <div class="chairText">
+                    <p>SIT <span>ON</span> OUR <span>CHAIR</span></p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor.</p>
+                    <button>ZOBACZ WIĘCEJ</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2_gallery">
+            <div class="main_width">
+                <div class="box1">
+                    <div class="chairType">
+
+                        <div>
+                            Chair CLAIR
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="chairType">
+                        <div>
+                            Chair MARGARITA
+                        </div>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div>Finds all inputs</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section3_price">
+            <div class="main_width">
+                <div class="price_header">CENNIK</div>
+
+
+                <div class="price_card">
+                    <div class="round"></div>
+                    <p>BASIC PLAN</p>
+                    <div class="price">
+                        <p>85<sup>99</sup></p>
+                        <p>PLN/MSC</p>
+                    </div>
+                    <div class="options">
+                        <p>Zakup towaru + dowoz</p>
+                        <p>Serwis</p>
+                    </div>
+                    <div>
+                        <button>DOŁĄCZ</button>
+                    </div>
+                </div>
+
+                <div class="price_card price_card2">
+                    <div class="round round2"></div>
+                    <p>STANDARD PLAN</p>
+                    <div class="price price2">
+                        <p>95<sup>99</sup></p>
+                        <p>PLN/MSC</p>
+                    </div>
+                    <div class="options options2">
+                        <p>Zakup towaru + dowoz</p>
+                        <p>Serwis</p>
+                        <p>Gwarancja 5 lat</p>
+                    </div>
+                    <div>
+                        <button>DOŁĄCZ</button>
+                    </div>
+                </div>
+
+                <div class="price_card">
+                    <div class="round"></div>
+                    <p>ADVENCE PLAN</p>
+                    <div class="price">
+                        <p>211<sup>00</sup></p>
+                        <p>PLN/MSC</p>
+                    </div>
+                    <div class="options">
+                        <p>Zakup towaru + dowoz</p>
+                        <p>Serwis</p>
+                        <p>Gwarancja 6 lat</p>
+                        <p>Porady projektanta</p>
+                    </div>
+                    <div>
+                        <button>DOŁĄCZ</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section4_contact">
+            <div class="main_width">
+
+            </div>
+        </section>
+
+        <footer>
+            <div class="main_width">
+
+            </div>
+        </footer>
+
+    </div>
+
+
+
+
+
+
+    <div id="layout" class="enabled">
+        Enabled
+    </div>
+
+
+    <script>
+        $("#layout").unbind("click").on("click", function() {
+            var $conteiner = $(".conteiner");
+            $(this).toggleClass("enabled")
+
+            if ($(this).hasClass("enabled")) {
+                $(this).css({
+                    "background-color": "green",
+                }).text("Enabled")
+                $conteiner.css({
+                    "background-image": "url(file:///home/dominik/coderslab/html_css/warsztat/SitOnChair/warsztat1.jpg)",
+                })
+            } else {
+                $(this).css({
+                    "background-color": "red",
+                }).text("Disabled")
+                $conteiner.css({
+                    "background-image": "none",
+                })
+            }
+
+
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#layout {
+    position: fixed;
+    background-color: green;
+    width: 100px;
+    height: 50px;
+    display: block;
+    right: 0;
+    top: 50%;
+    text-align: center;
+    vertical-align: center;
+    line-height: 50px;
+}
+
+.conteiner {
+    margin: auto;
+    width: 1200px;
+    height: 2273px;
+    background-image: url("file:///home/dominik/coderslab/html_css/warsztat/SitOnChair/warsztat1.jpg");
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.woff2') format('woff2'), url('../fonts/raleway-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.woff2') format('woff2'), url('../fonts/raleway-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main_width {
+    padding: 0 77px 0 67px;
+    border: 0.1px solid red;
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    height: 100%;
+}
+
+
+/*//////////////HEADER/////////////////////////*/
+
+header {
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+header .main_width {
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+header .logo {
+    font-family: 'ralewaybold';
+    padding-top: 2px;
+    font-size: 15px;
+}
+
+.logo span {
+    color: #22cab3;
+}
+
+nav {
+    font-family: 'ralewaybold';
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-top: 3px;
+    width: 286px;
+}
+
+.nav_1 {
+    padding-right: 15px;
+}
+
+
+/*////////////////////////Section1/////////////////////*/
+
+.section1_chair {
+    height: 390px;
+    margin-top: 115px;
+    background: linear-gradient(0deg, rgba(209, 209, 209, 1) 0%, rgba(224, 224, 224, 1) 16%, rgba(255, 255, 255, 1) 47%, rgba(255, 255, 255, 1) 100%);
+}
+
+.section1_chair .main_width {
+    display: block;
+}
+
+.arrowLeft {
+    background: blue;
+    opacity: 0.3;
+    margin-left: 6px;
+    height: 40px;
+    width: 34px;
+    margin-top: 127px;
+    float: left;
+}
+
+.section1_chair img {
+    height: 315px;
+    margin-left: 52px;
+    margin-top: 10px;
+    float: left;
+}
+
+.arrowRight {
+    background: blue;
+    opacity: 0.3;
+    height: 40px;
+    width: 33px;
+    margin-right: 6px;
+    margin-top: 127px;
+    float: right;
+}
+
+.chairText {
+    height: 100%;
+    width: 424px;
+    text-align: center;
+    float: right;
+    margin-right: 103px;
+}
+
+.chairText :first-child {
+    font-family: 'ralewaybold';
+    font-size: 40px;
+    margin-top: 20px;
+    margin-right: -2px;
+}
+
+.chairText :first-child span {
+    color: #22cab3;
+}
+
+.chairText :first-child+p {
+    margin-top: 29px;
+    line-height: 21px;
+}
+
+.chairText button {
+    width: 264px;
+    margin-left: 6px;
+    margin-top: 31px;
+    height: 52px;
+    background-color: #24bb9d;
+    opacity: 0.8;
+    font-size: 22px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+/*////////////////////////Seciton 2//////////////*/
+
+.section2_gallery {
+    margin-top: 27px;
+    height: 255px;
+}
+
+.section2_gallery .main_width {
+    justify-content: space-between;
+}
+
+.box1 {
+    height: 225px;
+    width: 330px;
+    background: url("../images/box1_img.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.box2 {
+    height: 225px;
+    width: 330px;
+    background: url("../images/box2_img.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.chairType {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    margin-top: 149px;
+    height: 62px;
+    padding-top: 14px;
+    padding-left: 13px;
+}
+
+.chairType>* {
+    color: black;
+    font-family: sans-serif;
+    border-bottom: 9px solid #24bb9d;
+    padding-left: 4px;
+    width: 150px;
+}
+
+.box3 {
+    padding: 26px 30px 0 21px;
+    width: 340px;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 2px;
+    font-family: sans-serif;
+}
+
+.box3>div {
+    font-size: 18px;
+    border-bottom: 8px solid #24bb9d;
+    width: 140px;
+}
+
+.box3 p {
+    padding-left: 2px;
+    margin-top: 11px;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.box3 :last-child {
+    margin-top: 21px;
+}
+
+
+/*////////////////////////Seciton 3//////////////*/
+
+.section3_price {
+    margin-top: 68px;
+    height: 726px;
+    background-color: #f1f1f1;
+}
+
+.section3_price .main_width {
+    padding: 44px 83px 66px 67px;
+    justify-content: space-between;
+}
+
+.price_header {
+    background: rgba(22, 255, 0, 0.49);
+    font-size: 21px;
+    font-family: sans-serif;
+    border-bottom: 9px solid #24bb9d;
+    width: 320px;
+    height: 39px;
+    position: absolute;
+}
+
+.price_card {
+    align-self: flex-end;
+    position: relative;
+    background-color: white;
+    width: 328px;
+    height: 500px;
+    border: 1px solid #c2c2c2;
+    text-align: center;
+    font-family: 'ralewaybold';
+}
+
+.round {
+    background-color: #c2c2c2;
+    width: 54px;
+    height: 54px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -37px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 15px solid white;
+    box-shadow: 0px 0px 0px 1px #c2c2c2;
+}
+
+.price_card> :nth-child(2) {
+    font-size: 22px;
+    margin-top: 11px;
+    color: #24bb9d;
+}
+
+.price {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27px;
+    height: 128px;
+    width: 128px;
+    border-radius: 100%;
+    border: 1px solid #c2c2c2;
+    text-align: center;
+    color: #c2c2c2;
+}
+
+.price>p {
+    margin-top: 25px;
+    font-size: 48px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.price sup {
+    vertical-align: text-top;
+    font-size: 18px;
+}
+
+.price> :last-child {
+    margin: 0;
+    font-size: 15px;
+}
+
+.price_card>.options {
+    margin-top: 37px;
+    color: #949494;
+    font-size: 23px;
+    font-family: 'ralewaymedium';
+    line-height: 43px;
+}
+
+.options> :nth-child(2n+1) {
+    background-color: #e4e4e4;
+}
+
+.options> :nth-child(2n+2) {
+    background-color: #f1f1f1;
+}
+
+.price_card > :last-child {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+
+.price_card button {
+  width: 120px;
+  height: 35px;
+  background-color: #24bb9d;
+  font-size: 22px;
+  color: white;
+  border-radius: 8px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.price_card2 {
+    border: 1px solid #24bb9d;
+    background-color: #24bb9d;
+}
+
+.round2 {
+    background-color: white;
+    border: 15px solid #24bb9d;
+    box-shadow: none;
+}
+
+.price2 {
+  color: #24bb9d;
+  background-color: white;
+}
+
+.options2 > :nth-child(2n+1) {
+    background-color: white;
+}
+
+.price_card2 > :nth-child(2){
+  color: white;
+}
+
+.price_card2 button {
+  background-color: white;
+  color: #24bb9d;
+}
+
+
+
+
+/*////////////////////////Seciton 4//////////////*/
+
+.section4_contact {
+    margin-top: 34px;
+    height: 455px;
+}
+
+footer {
+    margin-top: 80px;
+    height: 37px;
+}
